@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SLT</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="body">
+        <video autoplay muted loop id="bg-video">
+            <source src="files/bg-vid.mp4" type="video/mp4" />
+        </video>
+        <div class="mother">
+            <header class="mother_header">
+                <div class="logo-box"><p>SLT</p></div>
+                <div class="decor d1"></div>
+                <ul class="mother_header-links">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Support</a></li>
+                    <label class="theme-toggle">
+                        <input id="myCheckbox" type="checkbox" />
+                        <span class="slider round"></span>
+                    </label>
+                </ul>
+                <div class="decor d2"></div>
+                <div class="mother-header_buttons">
+                    <button class="log-in">Log in</button
+                    ><button class="sign-up">Sign up</button>
+                </div>
+            </header>
+            <main>
+                <section class="mother-head">
+                    <p class="mother-head_top-text">Sell online easier with</p>
+                    <p class="mother_head_main-text">
+                        <strong>SLT APP</strong>
+                    </p>
+                    <p class="mother-head_bottom-text">
+                        Set up your online store on Instagram, WhatsApp and<br />more.
+                        Share links andcollect payments with SLT App
+                    </p>
+                </section>
+                <section class="mother-body">
+                    <ol class="mother-body_advantages">
+                        <li class="mother-body_advantages_li">
+                            Start seelling online,<br />even without a website
+
+                            <p>
+                                Don't have a website? No worries.<br />Create
+                                payment links with a few<br />taps and share
+                                them via WhatsApp<br />or Instagram, all on
+                                mobile.
+                            </p>
+                        </li>
+                        <li class="mother-body_advantages_li">
+                            Accept Payments from<br />20+ channels
+                            <p>
+                                Activate various channels<br />according to your
+                                customers<br />preference such as Bank
+                                Transfer,<br />eWallet, QRIS, Cards and more.
+                            </p>
+                        </li>
+                        <li class="mother-body_advantages_li">
+                            Get notified in real-<br />time as your get paid
+
+                            <p>
+                                Skip the paun of manually validating<br />your
+                                payments. We handle it<br />automatically and
+                                notify you in<br />real-time when your link is
+                                paid.
+                            </p>
+                        </li>
+                    </ol>
+                    <ul class="mother-body_social-links">
+                        <li>
+                            <a href="https://www.linkedin.com/"
+                                ><div class="linkedin"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/"
+                                ><div class="twitter"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/"
+                                ><div class="facebook"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"
+                                ><div class="instagram"></div
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="Link on ?" /></a>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="mother-footer">//</footer>
+            <script>
+                // --main-white: #f9fffd;
+                //  --main-black: #141414;
+                let checkbox = document.getElementById("myCheckbox");
+                let mother = document.querySelector(".body");
+
+                checkbox.onchange = function () {
+                    if (checkbox.checked) {
+                        mother.style.setProperty("--main-white", "#141414");
+                        mother.style.setProperty("--main-black", "#f9fffd");
+
+                        console.log("Checkbox выбран");
+                    } else {
+                        console.log("Checkbox не выбран");
+                        mother.style.setProperty("--main-white", "#f9fffd");
+                        mother.style.setProperty("--main-black", "#141414");
+                    }
+                };
+            </script>
+        </div>
+    </body>
+</html>
