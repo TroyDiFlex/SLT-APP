@@ -235,7 +235,7 @@ a:active {
     margin-top: 400px;
     display: flex;
     flex-direction: row;
-    color: #f9fffd;
+    color: var(--main-black);
     padding-left: 40px;
 }
 
@@ -243,7 +243,7 @@ a:active {
     font-size: 25px;
     position: relative;
     top: 120px;
-    border-left: 2px solid #f9fffd;
+    border-left: 2px solid var(--main-black);
     padding-left: 10px;
     padding-right: 45px;
     transition: 0.22s;
